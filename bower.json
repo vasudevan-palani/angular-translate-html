@@ -1,0 +1,27 @@
+{
+  "name": "angular-translate-html",
+  "description": "Angular directive which provides html placeholder ability to angular-translate",
+  "main": "angular-translate-html.js",
+  "authors": [
+    "Vasudevan PALANI"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "translate",
+    "placeholder",
+    "html"
+  ],
+  "homepage": "https://github.com/vasudevan-palani/angular-translate-html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.3",
+    "angular-translate": "angular-translate#^2.8.0"
+  }
+}

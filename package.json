@@ -1,0 +1,26 @@
+{
+  "name": "angular-translate-html",
+  "version": "0.1.0",
+  "description": "Angular directive which provides html placeholder ability to angular-translate",
+  "main": "angular-translate-html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "translate",
+    "placeholder",
+    "html"
+  ],
+  "author": "Vasudevan PALANI",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "angularjs#^1.6.3",
+    "angular-translate": "angular-translate#^2.8.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}
