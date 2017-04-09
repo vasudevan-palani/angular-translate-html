@@ -35,3 +35,31 @@ angular.module("angular-translate-html", []).directive("translateHtml", ["$trans
         }]
     }
 }]);
+
+
+angular.module("angular-translate-html").directive("translateImg", ["$translate","$rootScope", function($translate, $rootScope) {
+    return {
+        restrict: 'A',
+        link : function(scope,elm,attr){
+          scope.attr = attr;
+          scope.elm = elm;
+        },
+        controller: ["$scope","$timeout", function($scope,$timeout) {
+            $scope.exec = function(key) {
+                $timeout(function() {
+                    if(angular.isDefined($scope.attr[key])){
+                      var elm = $scope.elm;
+                      var attr = $scope.attr;
+                      elm.attr('src',attr[key]);
+                      $scope.$apply();
+                    }
+                });
+            }
+
+            $rootScope.$on('$translateChangeSuccess', function(event,key) {
+                $scope.exec(key.language);
+            });
+            $scope.exec($translate.preferredLanguage());
+        }]
+    }
+}]);
