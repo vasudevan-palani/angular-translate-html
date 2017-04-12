@@ -1,6 +1,6 @@
 {
   "name": "angular-translate-html",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Angular directive which provides html placeholder ability to angular-translate",
   "main": "angular-translate-html.js",
   "scripts": {

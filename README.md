@@ -23,7 +23,9 @@ This is an Angular directive which provides html placeholder ability to angular-
 
 
 <!-- We can also different images load based on the local as below using translate-img directive -->
-<img en="https://www.w3schools.com/css/trolltunga.jpg" es="http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg" translate-img ng-src=""/>
+<img en="https://www.w3schools.com/css/trolltunga.jpg"
+    es="http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
+    translate-img ng-src=""/>
 
 ```
 
